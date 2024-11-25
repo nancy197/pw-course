@@ -28,7 +28,7 @@ test('title contain text', async ({ page }) => {
 test("heading contain text", async ({ page }) => {
   await page.goto('https://material.playwrightvn.com/');
   //Truy cập link chứa text "Bài học 1: Register Page"
-  await page.getByRole('link', { name: "Bài học 1: Register Page"}).click();
+  await page.getByRole('link', { name: "Bài học 1: Register Page" }).click();
   //Expect page to have a heading contain text "User Registration"
   await expect(page.getByRole('heading', { name: "User Registration" })).toBeVisible();
 })
